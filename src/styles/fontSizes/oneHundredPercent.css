@@ -1,0 +1,118 @@
+/*xs < 500*/
+@media screen and (max-width: 500px) {
+
+  .FontSizeOneHundred h1 {
+    font-size: 50px;
+  }
+
+  .FontSizeOneHundred h2 {
+    font-size: 45px;
+  }
+
+  .FontSizeOneHundred h3 {
+    font-size: 40px;
+  }
+
+  .FontSizeOneHundred button,
+  .FontSizeOneHundred h4 {
+    font-size: 35px;
+  }
+
+  .FontSizeOneHundred h5,
+  .FontSizeOneHundred .mat-form-field {
+    font-size: 30px;
+  }
+
+  .FontSizeOneHundred h6 {
+    font-size: 25px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 500px) {
+
+  .FontSizeOneHundred h1 {
+    font-size: 50px;
+  }
+
+  .FontSizeOneHundred h2 {
+    font-size: 45px;
+  }
+
+  .FontSizeOneHundred h3 {
+    font-size: 40px;
+  }
+
+  .FontSizeOneHundred button,
+  .FontSizeOneHundred h4 {
+    font-size: 40px;
+  }
+
+  .FontSizeOneHundred h5,
+  .FontSizeOneHundred .mat-form-field {
+    font-size: 35px;
+  }
+
+  .FontSizeOneHundred h6 {
+    font-size: 30px;
+  }
+}
+/*
+ md */
+@media screen and (min-width: 992px) {
+
+  .FontSizeOneHundred h1 {
+    font-size: 50px;
+  }
+
+  .FontSizeOneHundred h2 {
+    font-size: 45px;
+  }
+
+  .FontSizeOneHundred h3 {
+    font-size: 40px;
+  }
+
+  .FontSizeOneHundred button,
+  .FontSizeOneHundred h4 {
+    font-size: 40px;
+  }
+
+  .FontSizeOneHundred h5,
+  .FontSizeOneHundred .mat-form-field {
+    font-size: 35px;
+  }
+
+  .FontSizeOneHundred h6 {
+    font-size: 30px;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .FontSizeOneHundred h1 {
+    font-size: 50px;
+  }
+
+  .FontSizeOneHundred h2 {
+    font-size: 45px;
+  }
+
+  .FontSizeOneHundred h3 {
+    font-size: 40px;
+  }
+
+  .FontSizeOneHundred button,
+  .FontSizeOneHundred h4 {
+    font-size: 40px;
+  }
+
+  .FontSizeOneHundred h5,
+  .FontSizeOneHundred .mat-form-field {
+    font-size: 35px;
+  }
+
+  .FontSizeOneHundred h6 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,47 @@
+.EntryContainer {
+  border-bottom: solid;
+  border-width: .2em;
+  border-color: black;
+  overflow-wrap: normal;
+}
+
+.EntryContentColSeperatorRow {
+  display: flex !important;
+}
+
+.EntryDateCol {
+  border-width: .2em;
+  border-color: black;
+  padding: 3%;
+}
+
+.EntryDateContent {
+  display: inline;
+}
+
+h5, p {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  margin:0%;
+
+}
+
+h5 {
+  text-align: center;
+}
+
+p{
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
+
+.Body {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+

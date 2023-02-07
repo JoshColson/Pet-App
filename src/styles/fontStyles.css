@@ -1,0 +1,133 @@
+@font-face{
+    font-family: openDyslexic;
+    src: url(../assets/fonts/OpenDyslexic-Regular.otf)
+}
+@font-face {
+  font-family: easyReading;
+  src: url(../assets/fonts/EasyReadingPRO.ttf)
+}
+
+.FontDefault .mat-select-panel .mat-option-text,
+.FontDefault mat-select,
+.FontDefault mat-label,
+.FontDefault input,
+.FontDefault footer,
+.FontDefault button,
+.FontDefault h1,
+.FontDefault h2,
+.FontDefault h3,
+.FontDefault h4,
+.FontDefault h5,
+.FontDefault h6,
+.FontRoboto .mat-select-panel .mat-option-text,
+.FontRoboto mat-select,
+.FontRoboto mat-label,
+.FontRoboto input,
+.FontRoboto footer,
+.FontRoboto button,
+.FontRoboto h1,
+.FontRoboto h2,
+.FontRoboto h3,
+.FontRoboto h4,
+.FontRoboto h5,
+.FontRoboto h6,
+.FontRoboto {
+  font-family: Roboto;
+}
+
+
+.FontCalibri .mat-select-panel .mat-option-text,
+.FontCalibri mat-select,
+.FontCalibri mat-label,
+.FontCalibri input,
+.FontCalibri footer,
+.FontCalibri button,
+.FontCalibri h1,
+.FontCalibri h2,
+.FontCalibri h3,
+.FontCalibri h4,
+.FontCalibri h5,
+.FontCalibri h6,
+.FontCalibri {
+  font-family: Caibri;
+}
+
+.FontArial .mat-select-panel .mat-option-text,
+.FontArial mat-select,
+.FontArial mat-label,
+.FontArial input,
+.FontArial footer,
+.FontArial button,
+.FontArial h1,
+.FontArial h2,
+.FontArial h3,
+.FontArial h4,
+.FontArial h5,
+.FontArial h6,
+.FontArial {
+  font-family: Arial;
+}
+
+.FontTimesNewRoman .mat-select-panel .mat-option-text,
+.FontTimesNewRoman mat-select,
+.FontTimesNewRoman mat-label,
+.FontTimesNewRoman input,
+.FontTimesNewRoman footer,
+.FontTimesNewRoman button,
+.FontTimesNewRoman h1,
+.FontTimesNewRoman h2,
+.FontTimesNewRoman h3,
+.FontTimesNewRoman h4,
+.FontTimesNewRoman h5,
+.FontTimesNewRoman h6,
+.FontTimesNewRoman {
+  font-family: 'Times New Roman';
+}
+
+.FontOpenDyslexic .mat-select-panel .mat-option-text,
+.FontOpenDyslexic mat-select,
+.FontOpenDyslexic mat-label,
+.FontOpenDyslexic input,
+.FontOpenDyslexic footer,
+.FontOpenDyslexic button,
+.FontOpenDyslexic h1,
+.FontOpenDyslexic h2,
+.FontOpenDyslexic h3,
+.FontOpenDyslexic h4,
+.FontOpenDyslexic h5,
+.FontOpenDyslexic h6,
+.FontOpenDyslexic {
+  font-family: openDyslexic !important;
+}
+
+.FontEasyReading .mat-select-panel .mat-option-text,
+.FontEasyReading mat-select,
+.FontEasyReading mat-label,
+.FontEasyReading input,
+.FontEasyReading footer,
+.FontEasyReading button,
+.FontEasyReading h1,
+.FontEasyReading h2,
+.FontEasyReading h3,
+.FontEasyReading h4,
+.FontEasyReading h5,
+.FontEasyReading h6,
+.FontEasyReading {
+  font-family: easyReading;
+}
+
+.FontNeuland .mat-select-panel .mat-option-text,
+.FontNeuland mat-select,
+.FontNeuland mat-label,
+.FontNeuland input,
+.FontNeuland footer,
+.FontNeuland button,
+.FontNeuland h1,
+.FontNeuland h2,
+.FontNeuland h3,
+.FontNeuland h4,
+.FontNeuland h5,
+.FontNeuland h6,
+.FontNeuland {
+  font-family: neuland;
+}

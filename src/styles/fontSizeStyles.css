@@ -1,0 +1,102 @@
+
+
+
+
+
+.FontSizeTwentyFive, .FontSizeTwentyFive .mat-form-field {
+  font-size: 6pt;
+}
+
+
+.FontSizeSeventyFive, .FontSizeSeventyFive .mat-form-field {
+  font-size: 19pt ;
+}
+
+.FontSizeOneHundred, .FontSizeOneHundred .mat-form-field {
+  font-size: 25pt ;
+}
+/**/
+
+/*xs < 768*/
+/*@media screen and (max-width: 767px) {*/
+
+  .FontSizeTwentyFive, .FontSizeTwentyFive .mat-form-field
+  {
+    font-size: 1pt !important;
+  }
+
+   .FontSizeTwentyFive{
+
+   }
+
+
+.FontSizeDefault, .FontSizeFifty, .FontSizeDefault .mat-form-field, .FontSizeFifty .mat-form-field {
+  font-size: 8pt !important;
+}
+
+  .FontSizeSeventyFive, .FontSizeSeventyFive .mat-form-field {
+    font-size: 15pt !important;
+  }
+
+  .FontSizeOneHundred, .FontSizeOneHundred .mat-form-field {
+    font-size: 20pt !important;
+  }
+/*}
+
+ sm 
+@media screen and (min-width: 768px) {
+
+  .FontSizeTwentyFive, .FontSizeTwentyFive .mat-form-field {
+    font-size: 6pt !important;
+  }
+
+  .FontSizeDefault, .FontSizeFifty, .FontSizeDefault .mat-form-field, .FontSizeFifty .mat-form-field {
+    font-size: 8pt !important;
+  }
+
+  .FontSizeSeventyFive, .FontSizeSeventyFive .mat-form-field {
+    font-size: 15pt !important;
+  }
+
+  .FontSizeOneHundred, .FontSizeOneHundred .mat-form-field {
+    font-size: 20pt !important;
+  }
+}*/
+
+/* md */
+/*@media screen and (min-width: 992px) {
+  .FontSizeTwentyFive {
+    font-size: 6pt !important;
+  }
+
+  .FontSizeDefault, .FontSizeFifty, .mat-form-field {
+    font-size: 13pt !important;
+  }
+
+  .FontSizeSeventyFive {
+    font-size: 19pt !important;
+  }
+
+  .FontSizeOneHundred {
+    font-size: 25pt !important;
+  }
+}*/
+
+/* lg */
+/*@media screen and (min-width: 1200px) {
+  .FontSizeTwentyFive {
+    font-size: 6pt !important;
+  }
+
+  .FontSizeDefault, .FontSizeFifty, .mat-form-field {
+    font-size: 13pt !important;
+  }
+
+  .FontSizeSeventyFive {
+    font-size: 19pt !important;
+  }
+
+  .FontSizeOneHundred{
+      font-size: 25pt !important;
+  }
+}*/

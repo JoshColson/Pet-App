@@ -1,0 +1,23 @@
+.content {
+  border: solid;
+  border-width: .2em;
+  border-color: black;
+  margin: 4% !important;
+  height: 80%;
+}
+
+.content-row {
+  height: 10000px !important;
+}
+
+
+.content-inner {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: auto;
+  align-content: center;
+}
+
+.Title{
+    padding:3%;
+}

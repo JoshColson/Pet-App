@@ -1,0 +1,21 @@
+<body *ngIf="petButton" type="button" (click)="PetSelected()" [ngClass]="accessibility">
+  <div class="container-fluid media-body justify-content-center PetHeadshotContainer" [ngClass]="accentAccessibility.accentColour">
+    <div class="row NameLabelRow text-center justify-content-center " [ngClass]="accentAccessibility.accentColour">
+      <h4 class="col DisplayName">{{displayName}}</h4>
+    </div>
+    <div class="justify-content-center row ImageRow ">
+      <img class="col fill img-fluid" [attr.src]="Sanitize(petImageBinary)" alt="PetAvatar" />
+    </div>
+  </div>
+</body>
+
+<body *ngIf="!petButton" [ngClass]="accessibility">
+  <div class="container-fluid justify-content-center PetHeadshotContainer" [ngClass]="accentAccessibility.accentColour">
+    <div class="row NameLabelRow text-center justify-content-center" [ngClass]="accentAccessibility.accentColour">
+      <h4 class="col DisplayName">{{displayName}}</h4>
+    </div>
+    <div class="justify-content-center row ImageRow ">
+      <img class="col fill img-fluid" [attr.src]="Sanitize(petImageBinary)" alt="PetAvatar" />
+    </div>
+  </div>
+</body>

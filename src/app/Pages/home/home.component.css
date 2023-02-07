@@ -1,0 +1,19 @@
+.ReminderContainer {
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+  border-width: .2em;
+  border-color: black;
+  margin: 5%;
+}
+
+.ReminderTitleContainer {
+  border-bottom: solid;
+  border-width: .2em;
+  border-color: black;
+  padding: 3%;
+}
+
+.petHeadShots{
+    padding:2%;
+}

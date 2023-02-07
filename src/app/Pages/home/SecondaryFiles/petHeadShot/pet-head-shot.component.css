@@ -1,0 +1,21 @@
+.PetHeadshotContainer {
+  border-radius: 50%;
+  height: 100%;
+  width:100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fill {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.DisplayName {
+  overflow-wrap: anywhere !important;
+}
+

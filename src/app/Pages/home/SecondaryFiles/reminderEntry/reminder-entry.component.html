@@ -1,0 +1,22 @@
+<body class="Body container-fluid" [ngClass]="accessibility" >
+  <div class="EntryContainer row" [ngClass]="colourStyle">
+    <div class="EntryDateCol justify-content-center d-flex col-12 col-md-auto" >
+      <div class="EntryDateContent col d-flex align-items-center">
+        <h4 class="">{{displayDate}}</h4>
+      </div>
+    </div>
+    <div class="EntryContentCol d-flex flex-column col">
+      <div class="EntryPet row">
+        <h5>{{currentPet?.petName}}</h5>
+      </div>
+      <div class="EntryContentColSeperatorRow row"></div>
+      <div class="EntryContentRow flex-grow-1 row">
+        <h6>{{entry?.entryContent}}</h6>
+      </div>
+    </div>
+    <div class="EntryBinCol justify-content-center align-items-center d-flex col-md-auto col">
+      <button mat-button class="" (click)="DeleteEntry()"><component-fa-red_bin></component-fa-red_bin></button>
+    </div>
+  </div>
+</body>
+

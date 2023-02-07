@@ -1,0 +1,120 @@
+<body class="PageContainer container-fluid justify-content-center row" [ngClass]="accessibility">
+  <div class="row TitleRow">
+    <div class="col-md-3 col-10 align-self-center Title">
+      <h3 class="align-self-center">Add New Pet</h3>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-10 container ContentCol">
+    <div class="ContentInnerCol container col-12 col-sm-8 col-md-6">
+
+      <div class="row IntroRow">
+      </div>
+
+      <div class="PetName justify-content-center justify-content-center d-flex row InputRow">
+        <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center PetNameLabelCol">
+          <h5>Pet Name</h5>
+        </div>
+        <div class="col InputCol d-flex PetNameInputCol">
+          <mat-form-field [floatLabel]="'never'" hintLabel="{{ReturnPetNameRemainingChars(newPet.petName, newPetNameMaxChar)}} characters remaining">
+            <input matInput placeholder="Optional" [maxLength]="newPetNameMaxChar" [(ngModel)]="newPet.petName" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="PetSpecies justify-content-center justify-content-center d-flex row InputRow">
+        <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center petSpeciesLabelCol">
+          <h5>Pet Species</h5>
+        </div>
+        <div class="col InputCol d-flex petSpeciesInputCol">
+          <mat-form-field [floatLabel]="'never'" hintLabel="{{ReturnPetNameRemainingChars(newPet.petSpecies, newPetDetailsMaxChar)}} characters remaining">
+            <input matInput placeholder="Optional" [maxLength]="newPetDetailsMaxChar" [(ngModel)]="newPet.petSpecies" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="PetBreed justify-content-center justify-content-center d-flex row InputRow">
+        <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center PetBreedLabelCol">
+          <h5>Pet Breed</h5>
+        </div>
+        <div class="col InputCol d-flex PetBreedInputCol">
+          <mat-form-field [floatLabel]="'never'" hintLabel="{{ReturnPetNameRemainingChars(newPet.petBreed, newPetDetailsMaxChar)}} characters remaining">
+            <input matInput placeholder="Optional" [maxLength]="newPetDetailsMaxChar" [(ngModel)]="newPet.petBreed" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="PetDob justify-content-center justify-content-center d-flex row InputRow">
+        <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center PetBreedLabelCol">
+          <h5>Pet Date of Birth</h5>
+        </div>
+        <div class="col InputCol d-flex PetBreedInputCol">
+          <mat-form-field appearance="fill">
+            <input matInput placeholder="Optional" [min]="minCalendarDate" [max]="maxCalendarDate" [matDatepicker]="picker" [(ngModel)]="newPet.petDob">
+            <mat-hint>DD/MM/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="PetWeight justify-content-center justify-content-center d-flex row InputRow">
+        <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center PetWeightLabelCol">
+          <h5>Pet Weight</h5>
+        </div>
+        <div class="col InputCol d-flex PetWeightInputCol">
+          <mat-form-field [floatLabel]="'never'" hintLabel="{{ReturnPetNameRemainingChars(newPet.petWeight, newPetDetailsMaxChar)}} characters remaining">
+            <input matInput placeholder="Optional" [maxLength]="newPetDetailsMaxChar" [(ngModel)]="newPet.petWeight" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="PetLastVetVisit justify-content-center justify-content-center d-flex row InputRow">
+        <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center PetLastVetVisitLabelCol">
+          <h5>Date of Last Vet Visit</h5>
+        </div>
+        <div class="col InputCol d-flex PetLastVetVisitInputCol">
+          <mat-form-field appearance="fill">
+            <input matInput placeholder="Optional" [min]="minCalendarDate" [max]="maxCalendarDate" [matDatepicker]="picker2" [(ngModel)]="newPet.petLastVetVisit">
+            <mat-hint>DD/MM/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="PetImage justify-content-center row InputRow">
+        <div class="col LabelCol">
+          <h5>Add Pet Image (optional)</h5>
+        </div>
+
+        <div class="col ChooseFileCol">
+          <div class="row ChooseFileRow">
+            <button mat-button [ngClass]="accentAccessibility.accentColour" class="col ChooseFileBtn" (click)="fileInput.click()">Choose File</button>
+            <input hidden #fileInput class="col" type="file" [accept]="['.jpg', '.png']" (change)="FileSelection($event)">
+          </div>
+        </div>
+        <div *ngIf="!uploadData.uploadError && uploadData.FileName" class="row">
+          <h5 class="col-auto">file chosen:</h5>
+          <h5 class="col FileName">{{uploadData.FileName}}</h5>
+          <button mat-button [ngClass]="accentAccessibility.accentColour" class="col-md-12 removeFileBtn " (click)="RemoveChosenFileBtn()">Remove Chosen File</button>
+        </div>
+        <div *ngIf="uploadData.uploadErrorMessage" class="row errorMessage">
+          <h5>{{uploadData.uploadErrorMessage}}</h5>
+        </div>
+
+      </div>
+
+      <div class="row ButtonRow container-fluid justify-content-around">
+        <div class="col d-flex CancelBtnCol justify-content-center">
+          <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="CancelBtn()">Cancel</button>
+        </div>
+        <div class="col d-flex AddPetBtnCol justify-content-center">
+          <button mat-button [ngClass]="accentAccessibility.accentColour" [disabled]="uploadData.uploadError" (click)="AddPetBtn()">Add Pet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><h6>&#169;Josh Colson 2023</h6></footer>
+</body>
+

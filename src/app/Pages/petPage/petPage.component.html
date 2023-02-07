@@ -1,0 +1,99 @@
+<body class="pageContainer container-fluid" [ngClass]="accessibility">
+  <div class="row container-fluid Title TitleRow justify-content-around">
+    <div class="col d-flex BackBtnCol justify-content-center">
+      <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="BackBtn()">Back</button>
+    </div>
+    <div class="col d-flex EditPetBtnCol justify-content-center">
+      <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="EditPetBtn()">Edit Pet Details</button>
+    </div>
+    <div class="col d-flex RemovePetCol justify-content-center">
+      <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="RemovePetBtn()">Remove Pet</button>
+    </div>
+  </div>
+  <div class="row h-100 container-fluid justify-content-center contentRow">
+    <div class="col-12 col-md-10 container ContentCol">
+
+      <div class="row PetAvatar justify-content-center ">
+        <div class="col-5 col-sm-3 col-md-3 col-lg-2">
+          <component-pet_head_shot [petName]="selectedPet.petName" [accessibility]="accessibility" [accentAccessibility]="accentAccessibility" [petPictureLabel]="selectedPet.petPictureLabel" [petSpecies]="selectedPet.petSpecies"></component-pet_head_shot>
+        </div>
+      </div>
+      <div class="row PetDetailsRow justify-content-around">
+        <div class="col-xl-4 col-lg-5 col-12 PetDetailsCol">
+          <div class="PetDetailsContainer row">
+            <div class="row PetDetailsTitleRow align-content-center d-flex" [ngClass]="accentAccessibility.accentColour">
+              <h5>Pet Details</h5>
+            </div>
+
+            <div class="PetDetailsContentRow row" [ngClass]="i % 2 != 0 ? accentAccessibility.componentOneColour : accentAccessibility.componentTwoColour" *ngFor="let key of Object.keys(selectedPet); let i= index">
+              <div *ngIf="key !== 'petId' && key !== 'petPictureLabel' && key !== 'PetPictureFileName' && key !== 'petPictureFileName' && Object.values(selectedPet)[i]" class="row PetDetailsContent">
+                <div class="PetDetailsLabelCol justify-content-center d-flex col-12 col-md-auto">
+                  <div class="PetDetailsLabelContent col d-flex align-items-center">
+                    <h6 class="PetDetailsKey">{{key}}:</h6>
+                  </div>
+                </div>
+                <div class="PetDetailsValueCol d-flex flex-column col">
+                  <div class="PetDetailsValueRow flex-grow-1 d-flex align-items-center row ">
+                    <h6 class=" text-end">{{Object.values(selectedPet)[i]}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-5 col-12 col CreateReminderCol">
+          <div class="CreateReminderContainer row">
+            <div class="row CreateReminderTitleRow align-content-center d-flex" [ngClass]="accentAccessibility.accentColour">
+              <h5>Create Reminder</h5>
+            </div>
+
+            <div class="row ReminderDateRow" [ngClass]="accentAccessibility.componentOneColour">
+              <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center ReminderDateLabelCol">
+                <h6>Date of Reminder</h6>
+              </div>
+              <div class="col InputCol d-flex PetLastVetVisitInputCol">
+                <mat-form-field appearance="fill">
+                  <input matInput placeholder="Required" [min]="minCalendarDate" [max]="maxCalendarDate" [matDatepicker]="picker" (keydown)="TurnOffReminderMessage()" (dateChange)="TurnOffReminderMessage()" [(ngModel)]="newReminderDate">
+                  <mat-hint>DD/MM/YYYY</mat-hint>
+                  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div class="row ReminderContentRow" [ngClass]="accentAccessibility.componentTwoColour">
+              <div class="LabelCol col-md-12 col-lg-auto d-flex align-items-center ReminderDateLabelCol">
+                <h6>Reminder</h6>
+              </div>
+              <div class="col InputCol d-flex PetLastVetVisitInputCol">
+                <mat-form-field hintLabel="{{newReminderContentMaxChar-newReminderContent.length}} characters remaining">
+                  <textarea matInput placeholder="Required" [maxLength]="newReminderContentMaxChar" [(ngModel)]="newReminderContent" (keydown)="TurnOffReminderMessage()"></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div *ngIf="showReminderMessage" class="row ReminderMessageRow" [ngClass]="accentAccessibility.componentOneColour">
+              <div *ngIf="reminderMessageError" style="color:red;">
+                <h6>{{reminderMessage}}</h6>
+              </div>
+              <div *ngIf="!reminderMessageError" style="color:green;">
+                <h6>{{reminderMessage}}</h6>
+              </div>
+            </div>
+
+            <div class="row ButtonRow ReminderBtnRow container-fluid justify-content-around" [ngClass]="accentAccessibility.componentOneColour">
+              <div class="col d-flex CancelBtnCol justify-content-center">
+                <button mat-button [ngClass]="accentAccessibility.accentColour" [disabled]="newReminderContent==='' && this.newReminderDate === undefined" (click)="ResetReminderBtn()">Reset</button>
+              </div>
+              <div class="col d-flex SaveBtnCol justify-content-center">
+                <button mat-button [ngClass]="accentAccessibility.accentColour" [disabled]="newReminderContent==='' || this.newReminderDate === undefined || showReminderMessage" (click)="SubmitReminderBtn()">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><h6>&#169;Josh Colson 2023</h6></footer>
+</body>

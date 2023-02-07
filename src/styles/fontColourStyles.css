@@ -1,0 +1,31 @@
+.FontBlack, .FontColourDefault{
+    color:black;
+}
+
+.FontBlue{
+    color:blue;
+}
+
+.FontRed{
+    color:red;
+}
+
+.FontGreen{
+    color:green;
+}
+
+.FontGrey{
+    color:grey;
+}
+
+.FontWhite{
+    color:white;
+}
+
+.FileName {
+  color: green;
+}
+
+.errorMessage {
+  color: red;
+}

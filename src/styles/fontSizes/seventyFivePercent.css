@@ -1,0 +1,119 @@
+/*xs < 500*/
+@media screen and (max-width: 500px) {
+
+  .FontSizeSeventyFive h1 {
+    font-size: 40px;
+  }
+
+  .FontSizeSeventyFive h2 {
+    font-size: 36.5px;
+  }
+
+  .FontSizeSeventyFive h3 {
+    font-size: 32px;
+  }
+
+  .FontSizeSeventyFive button,
+  .FontSizeSeventyFive h4 {
+    font-size: 23px;
+  }
+
+  .FontSizeSeventyFive h5,
+  .FontSizeSeventyFive .mat-form-field {
+    font-size: 22px;
+  }
+
+  .FontSizeSeventyFive h6 {
+    font-size: 18px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 500px) {
+
+  .FontSizeSeventyFive h1 {
+    font-size: 39px;
+  }
+
+  .FontSizeSeventyFive h2 {
+    font-size: 34.5px;
+  }
+
+  .FontSizeSeventyFive h3 {
+    font-size: 30px;
+  }
+
+  .FontSizeSeventyFive button,
+  .FontSizeSeventyFive h4 {
+    font-size: 27px;
+  }
+
+  .FontSizeSeventyFive h5,
+  .FontSizeSeventyFive .mat-form-field {
+    font-size: 23.5px;
+  }
+
+  .FontSizeSeventyFive h6 {
+    font-size: 20px;
+  }
+}
+/*
+ md */
+@media screen and (min-width: 992px) {
+
+  .FontSizeSeventyFive h1 {
+    font-size: 39px;
+  }
+
+  .FontSizeSeventyFive h2 {
+    font-size: 34.5px;
+  }
+
+  .FontSizeSeventyFive h3 {
+    font-size: 30px;
+  }
+
+  .FontSizeSeventyFive button,
+  .FontSizeSeventyFive h4 {
+    font-size: 27px;
+  }
+
+  .FontSizeSeventyFive h5,
+  .FontSizeSeventyFive .mat-form-field {
+    font-size: 23.5px;
+  }
+
+  .FontSizeSeventyFive h6 {
+    font-size: 20px;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+
+  .FontSizeSeventyFive h1 {
+    font-size: 39px;
+  }
+
+  .FontSizeSeventyFive h2 {
+    font-size: 35.5px;
+  }
+
+  .FontSizeSeventyFive h3 {
+    font-size: 31.5px;
+  }
+
+  .FontSizeSeventyFive button,
+  .FontSizeSeventyFive h4 {
+    font-size: 29px;
+  }
+
+  .FontSizeSeventyFive h5,
+  .FontSizeSeventyFive .mat-form-field {
+    font-size: 25px;
+  }
+
+  .FontSizeSeventyFive h6 {
+    font-size: 21px;
+  }
+}

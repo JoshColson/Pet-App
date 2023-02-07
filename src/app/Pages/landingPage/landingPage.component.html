@@ -1,0 +1,36 @@
+<body class="pageContainer container-fluid" [ngClass]="accessibility">
+  <div class="row container-fluid TitleRow justify-content-between">
+    <div class="col-5 petBtnCol">
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row h-100 container-fluid justify-content-center contentRow">
+    <div class="col-10 container-fluid ContentCol justify-content-center">
+      <div class="Title row text-center">
+        <h3>Welcome</h3>
+      </div>
+      <div class="ContentBody row justify-content-center text-center">
+        <h5>
+          Welcome! Please read the below introduction before proceeding.
+          <br /><br /><br />
+          This is a prototype website of a 'pet care' application. The website is designed to allow pet owners to create pet profiles and add reminders for their pets' care. A key function of the website is the ability to change accessibility functions, including page colours, and font design.
+          <br /><br /><br />
+          Website users can add a pet profile by clicking 'add pet' in the top, right-hand corner. You will see that there are already pre-loaded, default pet profiles on the website. You can click into pet profiles (either your own added pet or the default profiles) to view details about the pet, and to create reminders. Here you can also delete the pet profile. Reminders will appear on the homepage (there will be some sample reminders already present).
+          <br /><br /><br />
+          There are seven accessibility options that you can change. These can be found by clicking the 'accessibility' button at the top of the website's homepage. Please select settings from the drop-down boxes and click 'save' at the bottom of the page to change the accessibility options. For example, in 'Option One', use the drop-down box to change the website's font. You can change multiple accessibility functions at a time.
+          <br /><br /><br />
+          Please try each button and accessibility function before returning to the questionnaire. Please note that data, such as personalised pet profiles, will be reset if the browser is closed.
+          <br /><br /><br />
+          Thank you for reading; please click 'enter' to continue to the website homepage.
+        </h5>
+      </div>
+
+      <div class="row ButtonRow row justify-content-around">
+        <div class="buttonRow col d-flex justify-content-center">
+          <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="EnterBtn()">Enter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><h6>&#169;Josh Colson 2023</h6></footer>
+</body>

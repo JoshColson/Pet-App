@@ -1,0 +1,43 @@
+<body class="pageContainer container-fluid" [ngClass]="accessibility">
+  <div class="row container-fluid TitleRow justify-content-around" >
+    <div class="col d-flex BtnCol BackBtnCol justify-content-center" [ngClass]="ReturnButtonColClass()">
+      <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="BackBtn()">Intro</button>
+    </div>
+    <div class="col d-flex BtnCol ReturnBtnCol justify-content-center"[ngClass]="ReturnButtonColClass()">
+      <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="ResetBtn()">Reset Default Data</button>
+    </div>
+    <div class="col d-flex BtnCol AccessbilityBtnCol justify-content-center"[ngClass]="ReturnButtonColClass()">
+      <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="AccessibilityBtn()">Acessbility</button>
+    </div>
+    <div class="col d-flex BtnCol PetBtnCol justify-content-center"[ngClass]="ReturnButtonColClass()">
+      <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="AddPetBtn()">Add Pet</button>
+    </div>
+  </div>
+  <div class="row h-100 container-fluid justify-content-center contentRow">
+    <div class="col-12 col-md-10 container ContentCol">
+
+      <div class="row justify-content-around ">
+        <div *ngFor="let headshot of petData" class="petHeadShots justify-content-around" [ngClass]="ReturnHeadshotColClass()">
+          <component-pet_head_shot (emitPetSelected)="PetSelectionButton($event)" [accentAccessibility]="accentAccessibility" [accessibility]="accessibility" [petButton]="true" [petName]="headshot.petName" [petId]="headshot.petId" [petSpecies]="headshot.petSpecies" [petPictureLabel]="headshot.petPictureLabel"></component-pet_head_shot>
+        </div>
+      </div>
+
+      <div class="row ReminderRow justify-content-center" [ngClass]="accessibility">
+        <div class="ReminderContainer col-12 col-md-7">
+          <div class="ReminderTitleContainer row d-flex justify-content-center text-center " [ngClass]="accentAccessibility.accentColour">
+            <h4>Upcoming Reminders</h4>
+
+          </div>
+          <div *ngFor="let entry of reminderData; let i = index">
+            <component-reminder-entry [accentAccessibility]="accentAccessibility" [accessibility]="accessibility" [entry]="entry" [reminderIndex]="i" (emitEntryDeleted)="DeleteReminderEntry($event)"></component-reminder-entry>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <footer><h6>&#169;Josh Colson 2023</h6></footer>
+</body>
+

@@ -1,0 +1,43 @@
+.ComponentTwoColourBlue {
+  background-color: #95ADFC;
+}
+
+.ComponentTwoColourBlueGrey {
+  background-color: #DBE1F1;
+}
+
+.ComponentTwoColourGreen, .ComponentTwoColourDefault {
+  background-color: #A8F29A;
+}
+
+.ComponentTwoColourGrey {
+  background-color: #D8D3D6;
+}
+
+.ComponentTwoColourOrange {
+  background-color: #EDDD6E;
+}
+
+.ComponentTwoColourPeach {
+  background-color: #EDD1B0;
+}
+
+.ComponentTwoColourPurple {
+  background-color: #B987DC;
+}
+
+.ComponentTwoColourRed {
+  background-color: #E0A6AA;
+}
+
+.ComponentTwoColourTurquoise {
+  background-color: #A5F7E1;
+}
+
+.ComponentTwoColourYellow {
+  background-color: #F8FD89;
+}
+
+.ComponentTwoColourWhite {
+  background-color: white;
+}

@@ -1,0 +1,43 @@
+.BackgroundColourBlue {
+  background-color: #95ADFC;
+}
+
+.BackgroundColourBlueGrey {
+  background-color: #DBE1F1;
+}
+
+.BackgroundColourGreen {
+  background-color: #A8F29A;
+}
+
+.BackgroundColourGrey {
+  background-color: #D8D3D6;
+}
+
+.BackgroundColourOrange {
+  background-color: #EDDD6E;
+}
+
+.BackgroundColourPeach {
+  background-color: #EDD1B0;
+}
+
+.BackgroundColourPurple {
+  background-color: #B987DC;
+}
+
+.BackgroundColourRed {
+  background-color: #E0A6AA;
+}
+
+.BackgroundColourTurquoise {
+  background-color: #A5F7E1;
+}
+
+.BackgroundColourYellow {
+  background-color: #F8FD89;
+}
+
+.BackgroundColourWhite, .BackgroundColourDefault {
+  background-color: white;
+}

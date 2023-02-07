@@ -1,0 +1,78 @@
+.PetDetailsContent {
+  border-top: solid;
+  border-width: .1em;
+  border-color: black;
+}
+
+.PetDetailsLabelCol {
+  border-width: .1em;
+  border-color: black;
+  padding: 3%;
+/*  background-color: #FFE0E0;*/
+}
+
+.PetDetailsValueCol {
+/*  background-color: #DAF6FF;*/
+}
+
+.PetDetailsTitleRow {
+/*  background-color: #BBEFFF;*/
+}
+
+.PetDetailsContainer {
+  border: solid;
+  border-width: .1em;
+  border-color: black;
+  margin: 8%;
+  padding:0%;
+}
+
+
+.CreateReminderContainer {
+  border: solid;
+  border-width: .1em;
+  border-color: black;
+  margin: 8%;
+}
+
+.CreateReminderTitleRow {
+  border-bottom: solid;
+  border-width: .1em;
+  border-color: black;
+/*  background-color: #FFE0E0;*/
+  margin:0%;
+}
+
+.ReminderBtnRow, .ReminderMessageRow, .ReminderDateRow, .ReminderContentRow, .CreateReminderTitleRow {
+  padding: 3% !important;
+  margin:0%;
+}
+
+.ReminderBtnRow, .ReminderMessageRow, .ReminderDateRow, .ReminderContentRow {
+/*  background-color: #DAF6FF;*/
+}
+
+.PetDetailsContentRow, .PetDetailsContent, .PetDetailsTitleRow {
+  padding: 0%;
+  margin:0%;
+}
+
+.PetDetailsKey {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  margin: 0%;
+}
+
+
+.PetAvatar {
+  margin-top: 4% !important;
+  margin-bottom: 2% !important;
+}
+
+.petHeadShots{
+    padding:2%;
+}
+
+

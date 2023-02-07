@@ -1,0 +1,156 @@
+<body class="pageContainer container-fluid justify-content-center row " [ngClass]="accessibility">
+  <div class="row TitleRow">
+    <div class="col-md-3 col-10 align-self-center Title">
+      <h3 class="align-self-center">Accessibility</h3>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-10 container ContentCol">
+    <div class="contentInnerCol container col-12 col-sm-8 col-md-6">
+      <div class="row IntroRow">
+      </div>
+
+      <div class="Font align-items-center justify-content-center d-flex row InputRow">
+        <div class="col FontCol">
+          <div class="InputIntro FontInputIntroRow justify-content-center align-items-center text-center d-flex row ">
+            <h5>Option One</h5>
+            <h6>Here you can change font types.</h6>
+          </div>
+          <div class="row inputCol d-flex FontInputCol">
+            <mat-form-field appearance="fill">
+              <mat-label>Font</mat-label>
+              <mat-select [(ngModel)]="newOptions.font">
+                <mat-option [ngClass]="fontClasses[i]" *ngFor="let option of fontOptions; let i = index" [value]="fontClasses[i]">
+                  {{option}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div class="FontColour align-items-center justify-content-center d-flex row InputRow">
+        <div class="col FontColourCol">
+          <div class="InputIntro FontColourInputIntroRow justify-content-center align-items-center text-center d-flex row ">
+            <h5>Option Two</h5>
+            <h6>Here you can change the font colour.</h6>
+          </div>
+          <div class="row inputCol d-flex FontColourInputCol">
+            <mat-form-field appearance="fill">
+              <mat-label>Font Colour</mat-label>
+              <mat-select [(ngModel)]="newOptions.fontColour">
+                <mat-option [ngClass]="fontColourClasses[i]" *ngFor="let option of fontColourOptions; let i = index" [value]="fontColourClasses[i]">
+                  {{option}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="FontSize align-items-center justify-content-center d-flex row InputRow">
+        <div class="col FontSizeCol">
+          <div class="InputIntro FontSizeInputIntroRow justify-content-center align-items-center text-center d-flex row ">
+            <h5>Option Three</h5>
+            <h6>Here you can change the font size.</h6>
+          </div>
+          <div class="row inputCol d-flex FontSizeInputCol">
+            <mat-form-field appearance="fill">
+              <mat-label>Font Size</mat-label>
+              <mat-select [(ngModel)]="newOptions.fontSize">
+                <mat-option [ngClass]="fontSizeClasses[i]" *ngFor="let option of fontSizeOptions; let i = index" [value]="fontSizeClasses[i]">
+                  <h6>{{option}}</h6>
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="BackgroundColour align-items-center justify-content-center d-flex row InputRow">
+        <div class="col BackgroundColourCol">
+          <div class="InputIntro BackgroundColourInputIntroRow justify-content-center align-items-center text-center d-flex row ">
+            <h5>Option Four</h5>
+            <h6>Here you can change the primary background colour.</h6>
+          </div>
+          <div class="row inputCol d-flex BackgroundColourInputCol">
+            <mat-form-field appearance="fill">
+              <mat-label>Background Colour</mat-label>
+              <mat-select [(ngModel)]="newOptions.backgroundColour">
+                <mat-option [ngClass]="backgroundColourClasses[i]" *ngFor="let option of backgroundColourOptions; let i = index" [value]="backgroundColourClasses[i]">
+                  {{option}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="AccentColour align-items-center justify-content-center d-flex row InputRow">
+        <div class="col AccentColourCol">
+          <div class="InputIntro AccentColourInputIntroRow justify-content-center align-items-center text-center d-flex row ">
+            <h5>Option Five</h5>
+            <h6>Here you can change the accent colour.</h6>
+          </div>
+          <div class="row inputCol d-flex AccentColourInputCol">
+            <mat-form-field appearance="fill">
+              <mat-label>Accent Colour</mat-label>
+              <mat-select [(ngModel)]="newOptions.accentColour">
+                <mat-option [ngClass]="accentColourClasses[i]" *ngFor="let option of accentColourOptions; let i = index" [value]="accentColourClasses[i]">
+                  {{option}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="ComponentOneColour align-items-center justify-content-center d-flex row InputRow">
+        <div class="col ComponentOneColourCol">
+          <div class="InputIntro ComponentOneColourInputIntroRow justify-content-center align-items-center text-center d-flex row ">
+            <h5>Option Six</h5>
+            <h6>Here you can change the first colour within the 'reminders', 'pet details', and 'create reminder' components (default blue).</h6>
+          </div>
+          <div class="row inputCol d-flex ComponentOneColourInputCol">
+            <mat-form-field appearance="fill">
+              <mat-label>Component Colour One</mat-label>
+              <mat-select [(ngModel)]="newOptions.componentOneColour">
+                <mat-option [ngClass]="componentOneColourClasses[i]" *ngFor="let option of componentOneColourOptions; let i = index" [value]="componentOneColourClasses[i]">
+                  {{option}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="ComponentTwoColour align-items-center justify-content-center d-flex row InputRow">
+        <div class="col FormOneColourCol">
+          <div class="InputIntro ComponentTwoColourInputIntroRow justify-content-center align-items-center text-center d-flex row ">
+            <h5>Option Seven</h5>
+            <h6>Here you can change the second colour within the 'reminders', 'pet details', and 'create reminder' components (default green).</h6>
+          </div>
+          <div class="row inputCol d-flex ComponentTwoColourInputCol">
+            <mat-form-field appearance="fill">
+              <mat-label>Component Colour Two</mat-label>
+              <mat-select [(ngModel)]="newOptions.componentTwoColour">
+                <mat-option [ngClass]="componentTwoColourClasses[i]" *ngFor="let option of componentTwoColourOptions; let i = index" [value]="componentTwoColourClasses[i]">
+                  {{option}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ButtonRow container-fluid justify-content-around">
+        <div class="col d-flex CancelBtnCol justify-content-center">
+          <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="CancelBtn()">Cancel</button>
+        </div>
+        <div class="col d-flex SaveBtnCol justify-content-center">
+          <button mat-button [ngClass]="accentAccessibility.accentColour" (click)="SaveBtn()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><h6>&#169;Josh Colson 2023</h6></footer>
+</body>

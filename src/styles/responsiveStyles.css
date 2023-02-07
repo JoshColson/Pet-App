@@ -1,0 +1,34 @@
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .col-xl-1-5 {
+    flex: 0 0 12.3%;
+    max-width: 12.3%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+
+@media screen and (max-width: 693px) {
+  .ContentCol {
+    border: none !important;
+    border-width: 0px;
+  }
+}
+
